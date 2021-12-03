@@ -387,3 +387,44 @@ template {
     --dark-green: #0B3F36;
     --light-green: #EAF8F9;
 }
+
+.button {
+  padding: 10px 30px;
+  font-family: Neuton;
+  font-weight: 400;
+  line-height: 28.8px;
+  border: none;
+}
+
+.button--theme-dark {
+  background: var(--dark-green);
+  color: var(--white);
+}
+
+.button--theme-light {
+  background: var(--white);
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
+}
+
+.button--size-big {
+  font-weight: 700;
+  size: 18.42px;
+  line-height: 29.47px;
+}
+
+.subtitle {
+  font-family: Lobster Two;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58.5px;
+  color: var(--dark-green);
+}
+
+.title {
+  font-family: Lobster Two;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 98.8px;
+  color: var(--dark-green);
+}

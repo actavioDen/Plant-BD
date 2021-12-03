@@ -1,0 +1,24 @@
+.button {
+  padding: 10px 30px;
+  font-family: Neuton;
+  font-weight: 400;
+  line-height: 28.8px;
+  border: none;
+}
+
+.button--theme-dark {
+  background: var(--dark-green);
+  color: var(--white);
+}
+
+.button--theme-light {
+  background: var(--white);
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
+}
+
+.button--size-big {
+  font-weight: 700;
+  size: 18.42px;
+  line-height: 29.47px;
+}
