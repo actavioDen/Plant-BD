@@ -1,0 +1,39 @@
+/*Общие стили*/
+
+/*Fonts*/
+
+@font-face {
+    font-family: "Lalezar";
+    src: url("../fonts/Lalezar-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lobster Two";
+    src: url("../fonts/LobsterTwo-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neuton";
+    src: url("../fonts/Neuton-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neuton";
+    src: url("../fonts/Neuton-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Variables*/
+:root {
+    --black: #000;
+    --white: #fff;
+    --dark-green: #0B3F36;
+    --light-green: #EAF8F9;
+}
