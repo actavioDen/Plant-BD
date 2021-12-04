@@ -1,27 +1,30 @@
-.menu{
-    padding: 0;
+.menu {
+  padding: 0;
 
-    display: flex;
+  display: flex;
 
-    list-style: none;
+  list-style: none;
 }
 
-
-.menu__item{
-    padding: 0 20px;
-    
-    
+.menu__item {
+  padding: 0 20px;
 }
 
-.menu__link{
-    font-family: Neuton;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 25.6px;
-    text-decoration: none;
-    color: var(--black);   
+.menu__link {
+  font-family: Neuton;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25.6px;
+  text-decoration: none;
+  color: var(--black);
 }
 
-.menu__link:hover{
-    font-weight: 700;
+.menu__link--theme-light {
+  font-size: 22px;
+  line-height: 35.2px;
+  color: var(--white);
+}
+
+.menu__link:hover {
+  font-weight: 700;
 }

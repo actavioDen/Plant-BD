@@ -413,16 +413,40 @@ template {
   line-height: 29.47px;
 }
 
-.button--theme-nav{
+.button--theme-nav {
   padding: 0;
   border: none;
   background: none;
 }
 
-.footer__wrapper{
-    width: 1215px;
-    margin: 0 auto;
+.button__wrapper {
+  /*Если кнопка окажется в системе раскладок flex, grid, эта обертка позволит сохранить исходные размеры кнопки, и выравнить по центру*/
+  align-self: center;
 }
+
+.copyright {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.footer {
+  background: var(--dark-green);
+}
+
+.footer__wrapper {
+  width: 1215px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__section {
+  padding: 27px 0;
+}
+
 .header__wrapper{
     width: 1215px;
     margin: 0 auto;
@@ -446,32 +470,35 @@ template {
     line-height: 28.6px;
     color:var(--white);
 }
-.menu{
-    padding: 0;
+.menu {
+  padding: 0;
 
-    display: flex;
+  display: flex;
 
-    list-style: none;
+  list-style: none;
 }
 
-
-.menu__item{
-    padding: 0 20px;
-    
-    
+.menu__item {
+  padding: 0 20px;
 }
 
-.menu__link{
-    font-family: Neuton;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 25.6px;
-    text-decoration: none;
-    color: var(--black);   
+.menu__link {
+  font-family: Neuton;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25.6px;
+  text-decoration: none;
+  color: var(--black);
 }
 
-.menu__link:hover{
-    font-weight: 700;
+.menu__link--theme-light {
+  font-size: 22px;
+  line-height: 35.2px;
+  color: var(--white);
+}
+
+.menu__link:hover {
+  font-weight: 700;
 }
 
 .menu-autorized{
@@ -503,13 +530,30 @@ template {
 .page-body__footer{
     margin-top: 100px;
 }
-.section__wrapper{
-    width: 1215px;
-    margin: 0 auto;
+.section__wrapper {
+  width: 1215px;
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
+.section__product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__product-list-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__product-list-down {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
 .slider-nav{
     grid-column: span 2;
 
@@ -525,12 +569,19 @@ template {
   color: var(--dark-green);
 }
 
-.text{
-    font-family: Neuton;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 37.4px;
+.text {
+  font-family: Neuton;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 37.4px;
 }
+
+.text--size-big {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44.8px;
+}
+
 .title {
   font-family: Lobster Two;
   font-weight: 700;

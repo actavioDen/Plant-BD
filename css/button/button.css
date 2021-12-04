@@ -23,8 +23,13 @@
   line-height: 29.47px;
 }
 
-.button--theme-nav{
+.button--theme-nav {
   padding: 0;
   border: none;
   background: none;
+}
+
+.button__wrapper {
+  /*Если кнопка окажется в системе раскладок flex, grid, эта обертка позволит сохранить исходные размеры кнопки, и выравнить по центру*/
+  align-self: center;
 }

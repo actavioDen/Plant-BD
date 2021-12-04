@@ -1,6 +1,12 @@
-.text{
-    font-family: Neuton;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 37.4px;
+.text {
+  font-family: Neuton;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 37.4px;
+}
+
+.text--size-big {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44.8px;
 }

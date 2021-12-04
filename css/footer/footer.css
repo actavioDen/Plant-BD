@@ -1,4 +1,16 @@
-.footer__wrapper{
-    width: 1215px;
-    margin: 0 auto;
+.footer {
+  background: var(--dark-green);
+}
+
+.footer__wrapper {
+  width: 1215px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__section {
+  padding: 27px 0;
 }
