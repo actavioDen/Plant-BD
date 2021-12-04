@@ -388,10 +388,6 @@ template {
     --light-green: #EAF8F9;
 }
 
-.about__wrapper{
-    width: 1215px;
-    margin: 0 auto;
-}
 .button {
   padding: 10px 30px;
   font-family: Neuton;
@@ -417,6 +413,16 @@ template {
   line-height: 29.47px;
 }
 
+.button--theme-nav{
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.footer__wrapper{
+    width: 1215px;
+    margin: 0 auto;
+}
 .header__wrapper{
     width: 1215px;
     margin: 0 auto;
@@ -484,6 +490,32 @@ template {
     display: grid;
     grid-template-rows: min-content 1fr min-content;    /*Шапка, основное содержимое, подвал*/
     
+}
+
+.page-body__header{
+    margin-top: 28px;
+}
+
+.page-body__section{
+    margin-top: 130px;
+}
+
+.page-body__footer{
+    margin-top: 100px;
+}
+.section__wrapper{
+    width: 1215px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.slider-nav{
+    grid-column: span 2;
+
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
 }
 .subtitle {
   font-family: Lobster Two;
