@@ -388,6 +388,10 @@ template {
     --light-green: #EAF8F9;
 }
 
+.about__wrapper{
+    width: 1215px;
+    margin: 0 auto;
+}
 .button {
   padding: 10px 30px;
   font-family: Neuton;
@@ -413,6 +417,74 @@ template {
   line-height: 29.47px;
 }
 
+.header__wrapper{
+    width: 1215px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 139px;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__text{
+    font-family: Lalezar;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28.6px;
+    color:var(--white);
+}
+.menu{
+    padding: 0;
+
+    display: flex;
+
+    list-style: none;
+}
+
+
+.menu__item{
+    padding: 0 20px;
+    
+    
+}
+
+.menu__link{
+    font-family: Neuton;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-decoration: none;
+    color: var(--black);   
+}
+
+.menu__link:hover{
+    font-weight: 700;
+}
+
+.menu-autorized{
+    width: 255px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+}
+.page{ /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
+    height: 100%;
+}
+.page-body{
+    min-height: 100%; /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;    /*Шапка, основное содержимое, подвал*/
+    
+}
 .subtitle {
   font-family: Lobster Two;
   font-weight: 700;
@@ -421,6 +493,12 @@ template {
   color: var(--dark-green);
 }
 
+.text{
+    font-family: Neuton;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37.4px;
+}
 .title {
   font-family: Lobster Two;
   font-weight: 700;
