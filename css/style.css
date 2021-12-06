@@ -396,6 +396,18 @@ template {
   align-items: flex-start;
 }
 
+.about-section__img-wrapper {
+  width: 558px;
+  height: 604px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--light-green);
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+}
+
 .button {
   padding: 10px 40px;
   font-family: Neuton;
