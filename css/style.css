@@ -389,9 +389,10 @@ template {
 }
 
 .button {
-  padding: 10px 30px;
+  padding: 10px 40px;
   font-family: Neuton;
   font-weight: 400;
+  font-size: 18px;
   line-height: 28.8px;
   border: none;
 }
@@ -501,12 +502,13 @@ template {
   font-weight: 700;
 }
 
-.menu-autorized{
-    width: 255px;
-    height: 49px;
-    display: flex;
-    justify-content: space-between;
+.menu-autorized {
+  width: 285px;
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
 }
+
 .page{ /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
     height: 100%;
 }
@@ -554,13 +556,58 @@ template {
   justify-items: center;
 }
 
-.slider-nav{
-    grid-column: span 2;
-
-    width: 110px;
-    display: flex;
-    justify-content: space-between;
+.section__desc,
+.section__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.section__preview-button {
+  margin-top: 36px;
+}
+
+.section__desc--position-left {
+  margin-right: 130px;
+}
+
+.section__desc--position-right {
+  margin-left: 130px;
+}
+
+.section__desc-control {
+  width: 385px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__desc-control--position-left {
+  align-self: flex-start;
+}
+
+.section__desc-control--position-right {
+  align-self: flex-end;
+}
+
+.slider-nav {
+  grid-column: span 2;
+
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-nav--position-left {
+  grid-column: 1/-1;
+  justify-self: flex-start;
+}
+
+.slider-nav--position-right {
+  grid-column: 1/-1;
+  justify-self: flex-end;
+}
+
 .subtitle {
   font-family: Lobster Two;
   font-weight: 700;

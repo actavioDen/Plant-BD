@@ -21,3 +21,37 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
+
+.section__desc,
+.section__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__preview-button {
+  margin-top: 36px;
+}
+
+.section__desc--position-left {
+  margin-right: 130px;
+}
+
+.section__desc--position-right {
+  margin-left: 130px;
+}
+
+.section__desc-control {
+  width: 385px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__desc-control--position-left {
+  align-self: flex-start;
+}
+
+.section__desc-control--position-right {
+  align-self: flex-end;
+}

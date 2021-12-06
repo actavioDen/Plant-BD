@@ -1,7 +1,17 @@
-.slider-nav{
-    grid-column: span 2;
+.slider-nav {
+  grid-column: span 2;
 
-    width: 110px;
-    display: flex;
-    justify-content: space-between;
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-nav--position-left {
+  grid-column: 1/-1;
+  justify-self: flex-start;
+}
+
+.slider-nav--position-right {
+  grid-column: 1/-1;
+  justify-self: flex-end;
 }

@@ -1,6 +1,6 @@
-.menu-autorized{
-    width: 255px;
-    height: 49px;
-    display: flex;
-    justify-content: space-between;
+.menu-autorized {
+  width: 285px;
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
 }
