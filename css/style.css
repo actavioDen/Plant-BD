@@ -396,18 +396,6 @@ template {
   align-items: flex-start;
 }
 
-.about-section__img-wrapper {
-  width: 558px;
-  height: 604px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: var(--light-green);
-  border-top-left-radius: 35%;
-  border-bottom-right-radius: 35%;
-}
-
 .button {
   padding: 10px 40px;
   font-family: Neuton;
@@ -449,6 +437,29 @@ template {
   color: var(--white);
   font-size: 18px;
   line-height: 23.4px;
+}
+
+/*decorate-img используется для создания задней рамки у иображеий (декорациии). Необходим, т.к к img непременимы before и after*/
+.decorate-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--light-green);
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+
+  z-index: -1;
+}
+
+.docorate-img--size-x {
+  width: 441px;
+  height: 459px;
+}
+
+.docorate-img--size-l {
+  width: 558px;
+  height: 604px;
 }
 
 .footer {
@@ -607,6 +618,7 @@ template {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  grid-gap: 30px;
 }
 
 .section__desc,
@@ -619,6 +631,20 @@ template {
 
 .section__preview-button {
   margin-top: 36px;
+}
+
+.section__preview::before {
+  content: "";
+  width: 571px;
+  height: 530px;
+
+  position: absolute;
+
+  background: var(--light-green);
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+
+  z-index: -1;
 }
 
 .section__desc--position-left {

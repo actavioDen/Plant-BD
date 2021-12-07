@@ -1,0 +1,22 @@
+/*decorate-img используется для создания задней рамки у иображеий (декорациии). Необходим, т.к к img непременимы before и after*/
+.decorate-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--light-green);
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+
+  z-index: -1;
+}
+
+.docorate-img--size-x {
+  width: 441px;
+  height: 459px;
+}
+
+.docorate-img--size-l {
+  width: 558px;
+  height: 604px;
+}

@@ -20,6 +20,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  grid-gap: 30px;
 }
 
 .section__desc,
@@ -32,6 +33,20 @@
 
 .section__preview-button {
   margin-top: 36px;
+}
+
+.section__preview::before {
+  content: "";
+  width: 571px;
+  height: 530px;
+
+  position: absolute;
+
+  background: var(--light-green);
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+
+  z-index: -1;
 }
 
 .section__desc--position-left {
