@@ -395,6 +395,8 @@ template {
   font-size: 18px;
   line-height: 28.8px;
   border: none;
+
+  white-space: nowrap;
 }
 
 .button--theme-dark {
@@ -512,25 +514,30 @@ template {
 }
 
 
-.logo{
-    width: 139px;
-    height: 55px;
+.logo {
+  width: 140px;
+  height: 55px;
+  min-width: 140px;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  white-space: nowrap;
 }
 
-.logo__text{
-    font-family: Lalezar;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 28.6px;
-    color:var(--white);
+.logo__text {
+  font-family: Lalezar;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28.6px;
+  color: var(--white);
 }
+
 .menu {
   padding: 0;
 
   display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -601,23 +608,6 @@ template {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.section__product-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.section__product-list-up {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section__product-list-down {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-gap: 30px;
-}
-
 .section__desc,
 .section__preview {
   position: relative;
@@ -626,6 +616,11 @@ template {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.section__img {
+  width: 254.8px;
+  height: 402.16px;
 }
 
 .section__preview-button {
@@ -755,7 +750,7 @@ template {
   height: 105px;
 
   position: absolute;
-  bottom: 60px;
+  top: 500px;
   right: 60px;
 
   border: 3px dotted var(--dark-green);
@@ -765,6 +760,28 @@ template {
   background-repeat: no-repeat;
   background-position-x: 58%;
   background-position-y: 50%;
+}
+
+.section-product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-product-list__up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-product-list__down {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 30px;
+}
+
+.section-product-list__img {
+  width: 201px;
+  height: 324px;
 }
 
 .slider-nav {

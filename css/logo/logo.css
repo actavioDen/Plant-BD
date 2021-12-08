@@ -1,15 +1,18 @@
-.logo{
-    width: 139px;
-    height: 55px;
+.logo {
+  width: 140px;
+  height: 55px;
+  min-width: 140px;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  white-space: nowrap;
 }
 
-.logo__text{
-    font-family: Lalezar;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 28.6px;
-    color:var(--white);
+.logo__text {
+  font-family: Lalezar;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28.6px;
+  color: var(--white);
 }

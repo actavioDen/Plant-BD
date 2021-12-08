@@ -6,23 +6,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.section__product-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.section__product-list-up {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section__product-list-down {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-gap: 30px;
-}
-
 .section__desc,
 .section__preview {
   position: relative;
@@ -31,6 +14,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.section__img {
+  width: 254.8px;
+  height: 402.16px;
 }
 
 .section__preview-button {

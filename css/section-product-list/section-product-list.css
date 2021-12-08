@@ -1,0 +1,21 @@
+.section-product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-product-list__up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-product-list__down {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 30px;
+}
+
+.section-product-list__img {
+  width: 201px;
+  height: 324px;
+}
