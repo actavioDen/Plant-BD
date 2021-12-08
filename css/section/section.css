@@ -25,6 +25,8 @@
 
 .section__desc,
 .section__preview {
+position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,6 +50,31 @@
 
   z-index: -1;
 }
+
+.section__preview::after{
+  content: "$50";
+  width: 105px;
+  height: 105px;
+
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Neuton;
+  font-weight: 700;
+  font-size: 38.89px;
+  line-height: 62.22px;
+
+  color: var(--dark-green);
+  border: 3px dotted var(--dark-green);
+  border-radius: 50%;
+
+}
+
 
 .section__desc--position-left {
   margin-right: 130px;
