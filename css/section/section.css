@@ -25,7 +25,7 @@
 
 .section__desc,
 .section__preview {
-position: relative;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -40,9 +40,10 @@ position: relative;
 .section__preview::before {
   content: "";
   width: 571px;
-  height: 530px;
+  height: 100%;
 
   position: absolute;
+  top: -20px;
 
   background: var(--light-green);
   border-top-left-radius: 35%;
@@ -51,14 +52,14 @@ position: relative;
   z-index: -1;
 }
 
-.section__preview::after{
+.section__preview::after {
   content: "$50";
   width: 105px;
   height: 105px;
 
   position: absolute;
-  bottom: -40px;
-  right: 0;
+  bottom: 0;
+  right: 10px;
 
   display: flex;
   justify-content: center;
@@ -72,16 +73,42 @@ position: relative;
   color: var(--dark-green);
   border: 3px dotted var(--dark-green);
   border-radius: 50%;
-
 }
-
 
 .section__desc--position-left {
   margin-right: 130px;
+  position: relative;
 }
 
 .section__desc--position-right {
   margin-left: 130px;
+  position: relative;
+}
+
+.section__desc--position-right::before {
+  content: "";
+  width: 5px;
+  height: 518px;
+
+  position: absolute;
+  top: 0;
+  right: -50px;
+
+  border-radius: 3px;
+  background: linear-gradient(var(--dark-green), var(--light-green));
+}
+
+.section__desc--position-left::before {
+  content: "";
+  width: 5px;
+  height: 518px;
+
+  position: absolute;
+  top: 0;
+  left: -50px;
+
+  border-radius: 3px;
+  background: linear-gradient(var(--dark-green), var(--light-green));
 }
 
 .section__desc-control {
@@ -96,4 +123,8 @@ position: relative;
 
 .section__desc-control--position-right {
   align-self: flex-end;
+}
+
+.section__slider-nav {
+  margin-bottom: 30px;
 }

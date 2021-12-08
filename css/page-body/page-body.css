@@ -1,20 +1,24 @@
-.page-body{
-    min-height: 100%; /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
-    margin: 0 auto;
+.page-body {
+  min-height: 100%; /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;    /*Шапка, основное содержимое, подвал*/
-    
+  display: grid;
+  grid-template-rows: min-content 1fr min-content; /*Шапка, основное содержимое, подвал*/
 }
 
-.page-body__header{
-    margin-top: 28px;
+.page-body__section-about {
+  margin-top: 121px;
+  margin-bottom: 315px;
 }
 
-.page-body__section{
-    margin-top: 130px;
+.page-body__header {
+  margin-top: 28px;
 }
 
-.page-body__footer{
-    margin-top: 100px;
+.page-body__section {
+  margin-top: 130px;
+}
+
+.page-body__footer {
+  margin-top: 100px;
 }

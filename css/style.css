@@ -425,38 +425,6 @@ template {
   align-self: center;
 }
 
-.about-section__desc {
-  margin-left: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.about-section__img-wrapper{
-  position: relative;
-}
-
-.about-section__img-wrapper::before{
-  content: "";
-  width: 105px;
-  height: 105px;
-
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
-
-  border: 3px dotted var(--dark-green);
-  border-radius: 50%;
-  background-image: url("../img/play.svg");
-  background-size: cover 50%;
-  background-repeat: no-repeat;
-  background-position-x: 58%;
-  background-position-y: 50%;
-
-
-}
-
 .copyright {
   color: var(--white);
   font-size: 18px;
@@ -477,7 +445,7 @@ template {
 }
 
 .docorate-img--size-x {
-  width: 441px;
+  width: 415px;
   height: 459px;
 }
 
@@ -600,26 +568,31 @@ template {
 .page{ /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
     height: 100%;
 }
-.page-body{
-    min-height: 100%; /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
-    margin: 0 auto;
+.page-body {
+  min-height: 100%; /*Чтобы для страниц с любым объемом контента, подвал находился в самом низу*/
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;    /*Шапка, основное содержимое, подвал*/
-    
+  display: grid;
+  grid-template-rows: min-content 1fr min-content; /*Шапка, основное содержимое, подвал*/
 }
 
-.page-body__header{
-    margin-top: 28px;
+.page-body__section-about {
+  margin-top: 121px;
+  margin-bottom: 315px;
 }
 
-.page-body__section{
-    margin-top: 130px;
+.page-body__header {
+  margin-top: 28px;
 }
 
-.page-body__footer{
-    margin-top: 100px;
+.page-body__section {
+  margin-top: 130px;
 }
+
+.page-body__footer {
+  margin-top: 100px;
+}
+
 .section__wrapper {
   width: 1215px;
   margin: 0 auto;
@@ -647,7 +620,7 @@ template {
 
 .section__desc,
 .section__preview {
-position: relative;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -662,9 +635,10 @@ position: relative;
 .section__preview::before {
   content: "";
   width: 571px;
-  height: 530px;
+  height: 100%;
 
   position: absolute;
+  top: -20px;
 
   background: var(--light-green);
   border-top-left-radius: 35%;
@@ -673,14 +647,14 @@ position: relative;
   z-index: -1;
 }
 
-.section__preview::after{
+.section__preview::after {
   content: "$50";
   width: 105px;
   height: 105px;
 
   position: absolute;
-  bottom: -40px;
-  right: 0;
+  bottom: 0;
+  right: 10px;
 
   display: flex;
   justify-content: center;
@@ -694,16 +668,42 @@ position: relative;
   color: var(--dark-green);
   border: 3px dotted var(--dark-green);
   border-radius: 50%;
-
 }
-
 
 .section__desc--position-left {
   margin-right: 130px;
+  position: relative;
 }
 
 .section__desc--position-right {
   margin-left: 130px;
+  position: relative;
+}
+
+.section__desc--position-right::before {
+  content: "";
+  width: 5px;
+  height: 518px;
+
+  position: absolute;
+  top: 0;
+  right: -50px;
+
+  border-radius: 3px;
+  background: linear-gradient(var(--dark-green), var(--light-green));
+}
+
+.section__desc--position-left::before {
+  content: "";
+  width: 5px;
+  height: 518px;
+
+  position: absolute;
+  top: 0;
+  left: -50px;
+
+  border-radius: 3px;
+  background: linear-gradient(var(--dark-green), var(--light-green));
 }
 
 .section__desc-control {
@@ -718,6 +718,53 @@ position: relative;
 
 .section__desc-control--position-right {
   align-self: flex-end;
+}
+
+.section__slider-nav {
+  margin-bottom: 30px;
+}
+
+.section-about__wrapper {
+  width: 1215px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-about__img {
+  width: 481px;
+  height: 481px;
+}
+
+.section-about__desc {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-about__img-wrapper {
+  position: relative;
+}
+
+.section-about__img-wrapper::before {
+  content: "";
+  width: 105px;
+  height: 105px;
+
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+
+  border: 3px dotted var(--dark-green);
+  border-radius: 50%;
+  background-image: url("../img/play.svg");
+  background-size: cover 50%;
+  background-repeat: no-repeat;
+  background-position-x: 58%;
+  background-position-y: 50%;
 }
 
 .slider-nav {

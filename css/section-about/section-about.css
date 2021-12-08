@@ -1,4 +1,17 @@
-.about-section__desc {
+.section-about__wrapper {
+  width: 1215px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-about__img {
+  width: 481px;
+  height: 481px;
+}
+
+.section-about__desc {
   margin-left: 70px;
   display: flex;
   flex-direction: column;
@@ -6,11 +19,11 @@
   align-items: flex-start;
 }
 
-.about-section__img-wrapper{
+.section-about__img-wrapper {
   position: relative;
 }
 
-.about-section__img-wrapper::before{
+.section-about__img-wrapper::before {
   content: "";
   width: 105px;
   height: 105px;
@@ -26,6 +39,4 @@
   background-repeat: no-repeat;
   background-position-x: 58%;
   background-position-y: 50%;
-
-
 }
