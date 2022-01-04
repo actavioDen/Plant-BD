@@ -10,42 +10,44 @@
 <body class="page-body">
 
     <header class="header page-body__header">
-        <div class="header__wrapper">
-            <div class="logo">
-                <img src="./img/logo.png" alt="" class="logo__img" width="43px" height="55px">
-                <p class="logo__text">Plant BD</p>
+        <section class="header__wrapper">
+            <div class="header__up">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="" class="logo__img" width="43px" height="55px">
+                    <p class="logo__text">Plant BD</p>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Gallery</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+                    
+                </ul>
+                <div class="menu-autorized">
+                    <button class="button button--theme-light">Log In</button>
+                    <button class="button button--theme-dark">Sign Up</button>
+                </div>
             </div>
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Gallery</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-                
-            </ul>
-            <div class="menu-autorized">
-                <button class="button button--theme-light">Log In</button>
-                <button class="button button--theme-dark">Sign Up</button>
-            </div>
-        </div>
-    </header>
+        </section>
 
-    <main class="page__main">
-
-        <section class="section-about page-body__section-about">
-            <div class="section-about__wrapper ">
-                <div class="section-about__img-wrapper">
+        <section class="header__down">
+            <div class="header__wrapper header__down-wrapper">
+                <div class="header__img-wrapper">
                     <div class="decorate-img docorate-img--size-l">
-                        <img class="section-about__img" src="./img/flowers1.png" alt="Большой цветок с красным цветком на стволе" width="481px" height="481px">
+                        <img class="header__img" src="./img/flowers1.png" alt="Большой цветок с красным цветком на стволе" width="481px" height="481px">
                     </div>
                 </div>
-                <div class="section-about__desc">
+                <div class="header__desc">
                     <h1 class="title">Trees are always nice to us. Be nice to them.</h1>
                     <p class="text text--size-big">Trees are the lungs of the earth. But, with the increasing population and land requirement, the practice of deforestation</p>
                     <button class="button button--theme-dark button--size-big">Learn More</button>
                 </div>
             </div>
         </section>
+    </header>
+
+    <main class="page__main">        
 
         <section class="section page-body__section">
             <div class="section__wrapper">

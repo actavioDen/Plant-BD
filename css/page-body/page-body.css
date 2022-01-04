@@ -6,11 +6,6 @@
   grid-template-rows: min-content 1fr min-content; /*Шапка, основное содержимое, подвал*/
 }
 
-.page-body__section-about {
-  margin-top: 121px;
-  margin-bottom: 315px;
-}
-
 .page-body__header {
   margin-top: 28px;
 }
